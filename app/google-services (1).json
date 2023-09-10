@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "845802043861",
+    "firebase_url": "https://gymfit-1d458-default-rtdb.firebaseio.com",
+    "project_id": "gymfit-1d458",
+    "storage_bucket": "gymfit-1d458.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845802043861:android:93a4106156f44fea61a55c",
+        "android_client_info": {
+          "package_name": "com.example.gymfit2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845802043861-eku1jmtl4ig8fgdusdbnk8frehafv1fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAYeYJqSm6wCLKMVs4ia5DgG1dvSZliao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845802043861-eku1jmtl4ig8fgdusdbnk8frehafv1fg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845802043861:android:8c788b6ef4d549eb61a55c",
+        "android_client_info": {
+          "package_name": "com.example.gymfit2.activity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845802043861-eku1jmtl4ig8fgdusdbnk8frehafv1fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAYeYJqSm6wCLKMVs4ia5DgG1dvSZliao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845802043861-eku1jmtl4ig8fgdusdbnk8frehafv1fg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845802043861:android:27671062111d049961a55c",
+        "android_client_info": {
+          "package_name": "com.example.mainactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845802043861-eku1jmtl4ig8fgdusdbnk8frehafv1fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAYeYJqSm6wCLKMVs4ia5DgG1dvSZliao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845802043861-eku1jmtl4ig8fgdusdbnk8frehafv1fg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

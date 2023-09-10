@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Paginas.PaginaPrincipal">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:padding="16dp"
+       tools:ignore="MissingConstraints">
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Treinos"
+           android:textColor="@color/verde"
+           android:textSize="70dp"
+           android:layout_marginBottom="80dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           tools:layout_editor_absoluteY="175dp"
+           tools:ignore="MissingConstraints" />
+
+       <Button
+           android:id="@+id/buttonSuperiores"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:backgroundTint="#D3FD41"
+           android:text="Treinos Superiores"
+           android:textColor="@color/black"
+           android:onClick="treinoSuperior"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           tools:layout_editor_absoluteY="318dp"
+           tools:ignore="MissingConstraints" />
+
+       <Button
+           android:id="@+id/buttonInferiores"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:backgroundTint="#D3FD41"
+           android:text="Treinos Inferiores"
+           android:textColor="@color/black"
+           android:onClick="treinoInferior"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           tools:layout_editor_absoluteY="407dp"
+           tools:ignore="MissingConstraints" />
+
+       <Button
+           android:id="@+id/buttonMaps"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Mapas de academias"
+           android:textColor="@color/black"
+           android:backgroundTint="#D3FD41"
+           android:onClick="mapstreino"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           tools:layout_editor_absoluteY="493dp"
+           tools:ignore="MissingConstraints" />
+
+       <Button
+           android:id="@+id/buttonRedes"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Redes credenciadas"
+           android:textColor="@color/black"
+           android:onClick="redesHospital"
+           android:backgroundTint="#D3FD41"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           />
+
+   </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
