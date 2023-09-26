@@ -1,4 +1,5 @@
 package com.example.gymfit2.CriarConta
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -19,11 +20,12 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 class CadastroActivity : AppCompatActivity() {
     private lateinit var campoNome: EditText
     private lateinit var campoEmail: EditText
+    private lateinit var campoFone: EditText
     private lateinit var campoSenha: EditText
-    private lateinit var campoAltura: EditText
-    private lateinit var campoPeso: EditText
-    private lateinit var campoIdade: EditText
-    private lateinit var campoSexo: EditText
+    private lateinit var campoConfirmarSenha: EditText
+    private lateinit var campoEndereco: EditText
+    private lateinit var campoNascimento: EditText
+    private lateinit var campoSangue: EditText
     private lateinit var botaoCadastrar: Button
     private lateinit var progressBar: ProgressBar
 
@@ -40,69 +42,72 @@ class CadastroActivity : AppCompatActivity() {
         progressBar.visibility = View.GONE
         botaoCadastrar.setOnClickListener {
             val textoNome = campoNome.text.toString()
+            val textoConfirmarSenha = campoConfirmarSenha.text.toString()
             val textoEmail = campoEmail.text.toString()
             val textoSenha = campoSenha.text.toString()
-            val textoAltura = campoAltura.text.toString()
-            val textoPeso = campoPeso.text.toString()
-            val textoIdade = campoIdade.text.toString()
-            val textoSexo = campoSexo.text.toString()
+            val textoFone = campoFone.text.toString()
+            val textoEndereco = campoEndereco.text.toString()
+            val textoIdade = campoNascimento.text.toString()
+            val textoSangue = campoSangue.text.toString()
+
 
             if (!textoNome.isEmpty()) {
-                if (!textoEmail.isEmpty()) {
-                    if (!textoSenha.isEmpty()) {
-                        if (!textoAltura.isEmpty()){
-                            if (!textoPeso.isEmpty()){
-                                if (!textoIdade.isEmpty()){
-                                    if (!textoSexo.isEmpty()){
+                if (!textoIdade.isEmpty()) {
+                    if (!textoFone.isEmpty()) {
+                        if (!textoSangue.isEmpty()) {
+                            if (!textoEndereco.isEmpty()) {
+                                if (!textoEmail.isEmpty()) {
+                                    if (!textoSenha.isEmpty()) {
                                         usuario = Usuario()
                                         usuario.nome = textoNome
+                                        usuario.nascimento = textoIdade
+                                        usuario.fone = textoFone
+                                        usuario.sangue = textoSangue
                                         usuario.email = textoEmail
+                                        usuario.endereco = textoEndereco
                                         usuario.senha = textoSenha
-                                        usuario.altura = textoAltura
-                                        usuario.peso = textoPeso
-                                        usuario.idade = textoIdade
-                                        usuario.sexo = textoSexo
+                                        usuario.confirmarSenha == textoSenha
                                         cadastrar(usuario)
 
-                                    }else {
+                                    } else {
                                         Toast.makeText(
                                             this@CadastroActivity,
-                                            "Preencha a sexo!",
+                                            "Preencha a senha   !",
                                             Toast.LENGTH_SHORT
                                         ).show()
                                     }
-                                }else {
+                                } else {
                                     Toast.makeText(
                                         this@CadastroActivity,
-                                        "Preencha a idade!",
+                                        "Preencha com a email!",
                                         Toast.LENGTH_SHORT
                                     ).show()
                                 }
-                            }else {
+                            } else {
                                 Toast.makeText(
                                     this@CadastroActivity,
-                                    "Preencha a peso!",
+                                    "Preencha o seu Endereço!",
                                     Toast.LENGTH_SHORT
                                 ).show()
                             }
-                        }else {
+                        } else {
                             Toast.makeText(
                                 this@CadastroActivity,
-                                "Preencha a altura!",
+                                "Preencha o sangue!",
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
                     } else {
                         Toast.makeText(
                             this@CadastroActivity,
-                            "Preencha a senha!",
+                            "Preencha a fone!",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
                 } else {
                     Toast.makeText(
                         this@CadastroActivity,
-                        "Preencha o email!",
+                        "Preencha o idade!",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -112,77 +117,88 @@ class CadastroActivity : AppCompatActivity() {
                     "Preencha o nome!",
                     Toast.LENGTH_SHORT
                 ).show()
+
             }
         }
     }
 
     private fun cadastrar(usuario: Usuario) {
-        progressBar.visibility = View.VISIBLE
-        autenticacao = ConfiguracaoFirebase().getFirebaseAutenticacao()
-        autenticacao.createUserWithEmailAndPassword(usuario.email, usuario.senha)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
+        if (campoSenha == campoConfirmarSenha) {
+            progressBar.visibility = View.VISIBLE
+            autenticacao = ConfiguracaoFirebase().getFirebaseAutenticacao()
+            autenticacao.createUserWithEmailAndPassword(usuario.email, usuario.senha)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
 
-                    try {
+                        try {
 
-                    progressBar.visibility = View.GONE
-                        val idUsuario = task.result!!.user!!.uid
-                        val textoNome = ""
-                        val textoEmail = ""
-                        val textoSenha = ""
-                        val textoIdade = ""
-                        val textoSexo = ""
-                        val textoPeso = ""
-                        val textoAltura = ""
-                        val usuario = Usuario(
-                            idUsuario,
-                            textoNome,
-                            textoEmail,
-                            textoSenha,
-                            textoIdade,
-                            textoSexo,
-                            textoPeso,
-                            textoAltura
-                        )
-                        usuario.salvar()
+                            progressBar.visibility = View.GONE
+                            val idUsuario = task.result!!.user!!.uid
+                            val textoNome = ""
+                            val textoEmail = ""
+                            val textoSenha = ""
+                            val textoConfirmarSenha = ""
+                            val textoIdade = ""
+                            val textoSexo = ""
+                            val textoPeso = ""
+                            val textoAltura = ""
+                            val usuario = Usuario(
+                                idUsuario,
+                                textoNome,
+                                textoEmail,
+                                textoSenha,
+                                textoConfirmarSenha,
+                                textoIdade,
+                                textoSexo,
+                                textoPeso,
+                                textoAltura
+                            )
+                            usuario.salvar()
 
 
-                        //Salvar dados no firebase
+                            //Salvar dados no firebase
 
-                    Toast.makeText(
-                        this@CadastroActivity,
-                        "Cadastro com sucesso",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    startActivity(Intent(applicationContext, LoginActivity::class.java))
-                    finish()
-                        // Seu código aqui
-                    } catch (e: Exception) {
-                        e.printStackTrace()
+                            Toast.makeText(
+                                this@CadastroActivity,
+                                "Cadastro com sucesso",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                            startActivity(Intent(applicationContext, LoginActivity::class.java))
+                            finish()
+                            // Seu código aqui
+                        } catch (e: Exception) {
+                            e.printStackTrace()
+                        }
+
+                    } else {
+                        progressBar.visibility = View.GONE
+                        var erroExcecao = ""
+                        try {
+                            throw task.exception!!
+                        } catch (e: FirebaseAuthWeakPasswordException) {
+                            erroExcecao = "Digite uma senha mais forte!"
+                        } catch (e: FirebaseAuthInvalidCredentialsException) {
+                            erroExcecao = "Por favor, digite um e-mail válido"
+                        } catch (e: FirebaseAuthUserCollisionException) {
+                            erroExcecao = "Esta conta já foi cadastrada"
+                        } catch (e: Exception) {
+                            erroExcecao = "Ao cadastrar usuário: " + e.message
+                            e.printStackTrace()
+                        }
+                        Toast.makeText(
+                            this@CadastroActivity,
+                            "Erro: $erroExcecao",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
-
-                } else {
-                    progressBar.visibility = View.GONE
-                    var erroExcecao = ""
-                    try {
-                        throw task.exception!!
-                    } catch (e: FirebaseAuthWeakPasswordException) {
-                        erroExcecao = "Digite uma senha mais forte!"
-                    } catch (e: FirebaseAuthInvalidCredentialsException) {
-                        erroExcecao = "Por favor, digite um e-mail válido"
-                    } catch (e: FirebaseAuthUserCollisionException) {
-                        erroExcecao = "Esta conta já foi cadastrada"
-                    } catch (e: Exception) {
-                        erroExcecao = "Ao cadastrar usuário: " + e.message
-                        e.printStackTrace()
-                    }
-                    Toast.makeText(
-                        this@CadastroActivity,
-                        "Erro: $erroExcecao",
-                        Toast.LENGTH_SHORT
-                    ).show()
                 }
-            }
+        }else {
+            Toast.makeText(
+                this@CadastroActivity,
+                "As senhas não coincidem!",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
     }
 
     private fun Usuario(idUsuario: String) {
@@ -194,10 +210,11 @@ class CadastroActivity : AppCompatActivity() {
         campoNome = findViewById(R.id.editCadastroNome)
         campoEmail = findViewById(R.id.editCadastroEmail)
         campoSenha = findViewById(R.id.editCadastroSenha)
-        campoAltura = findViewById(R.id.editCadastroAltura)
-        campoPeso = findViewById(R.id.editCadastroPeso)
-        campoIdade = findViewById(R.id.editCadastroIdade)
-        campoSexo = findViewById(R.id.editCadastroSexo)
+        campoConfirmarSenha = findViewById(R.id.ConfirmarSenha)
+        campoFone = findViewById(R.id.editCadastroFone)
+        campoEndereco = findViewById(R.id.editCadastroEndereco)
+        campoNascimento = findViewById(R.id.editCadastroNascimento)
+        campoSangue = findViewById(R.id.editCadastroSangue)
         botaoCadastrar = findViewById(R.id.botaoCadastro)
         progressBar = findViewById(R.id.progressCadastro)
 

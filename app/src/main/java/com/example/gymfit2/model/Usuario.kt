@@ -8,12 +8,13 @@ class Usuario (
     var nome: String,
     var email: String,
     var senha: String,
-    var idade: String,
-    var sexo: String,
-    var peso: String,
-    var altura: String,
+    var fone: String,
+    var endereco: String,
+    var nascimento: String,
+    var sangue: String,
+    var confirmarSenha: String,
 ) {
-    constructor() : this("", "", "", "", "", "", "", "")
+    constructor() : this("", "", "", "", "", "", "", "","")
     fun salvar(){
         val firebaseRef: DatabaseReference = ConfiguracaoFirebase().getFirebase()
         val usuariosRf : DatabaseReference = firebaseRef.child("usuarios")
