@@ -10,6 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F4A8A8"
     android:gravity="center"
     tools:ignore="MissingConstraints">
 
@@ -17,6 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Redes Credenciadas"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:textSize="35dp"
         android:gravity="center"
         android:layout_marginTop="-300dp"
@@ -27,6 +30,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hemope"
+        android:textColor="@color/white"
+        android:backgroundTint="#E3402A"
         android:onClick="HemopeClick"
         />
 
@@ -35,6 +40,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ihene"
+        android:textColor="@color/white"
+        android:backgroundTint="#E3402A"
         android:onClick="IheneClick"
         />
 
