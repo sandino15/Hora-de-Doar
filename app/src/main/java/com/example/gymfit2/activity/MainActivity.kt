@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gymfit2.NovoLucas.activityMenuu
 import com.example.gymfit2.Paginas.PaginaPrincipal
 import com.example.gymfit2.R
 
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this,PaginaPrincipal::class.java)
+            val intent = Intent(this,activityMenuu::class.java)
             startActivity(intent)
         },3000)
 
