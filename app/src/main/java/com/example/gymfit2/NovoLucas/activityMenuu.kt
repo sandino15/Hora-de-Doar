@@ -23,7 +23,7 @@ class activityMenuu : AppCompatActivity() {
         startActivity(intent)
     }
     fun botaoredes (view: android.view.View) {
-        val intent = Intent(this, paginasMapas::class.java)
+        val intent = Intent(this, RedesHospital::class.java)
         startActivity(intent)
     }
 }

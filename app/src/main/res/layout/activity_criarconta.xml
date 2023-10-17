@@ -101,21 +101,25 @@
             android:padding="10dp"
             android:textSize="14dp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:text="A senha deve ter no mínimo 6 caracteres"
+            />
+
 
         <EditText
             android:id="@+id/ConfirmarSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/background_caixa_texto"
             android:hint="Confirmar Senha"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="14dp" />
-
-
-
-
 
         <Button
             android:id="@+id/botaoCadastro"
