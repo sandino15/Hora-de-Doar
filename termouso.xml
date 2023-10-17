@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/laranj"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora de Doar"
+        android:background="#DF0404"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/stroke"
+        android:backgroundTint="@color/white"
+        android:padding="@dimen/cardview_default_radius"
+        android:scrollbarDefaultDelayBeforeFade="2000"
+        android:text="quem_pode_utilizar_os_se_utilizar_os_servi_os_somente_se_concordar em celebrar um contrato vinculante com_o_hora_de_doar_e_n_o_for_uma_pessoa_impedida_de_receber_servi_os_sob_as_leis_da_jurisdi_o_aplic_vel_em_qualquer_hip_tese_voc_deve_ter_no_m_nimo_16_anos_de_idade_para_utilizar_os_servi_os_se_estiver_aceitando_estes_termos_e_utilizando_os_servi_os_em_nome_de_uma_empresa_organiza_o_governo_ou_outra_entidade_legal_voc_declara_e_garante_que_est_autorizado_a_realizar_tal_a_o_e_que_tem_poderes_para_vincular_referida_entidade_a_estes_termos_hip_tese_em_que_as_palavras_voc_e_seu_conforme_utilizadas_nestes_termos_far_o_refer_ncia_a_tal_entidade_2_privacidade_nossa_pol_tica_de_privacidade_descreve_como_manuseamos_as_informa_es_fornecidas_por_voc_ao_utilizar_nossos_servi_os_voc_entende_que_ao_utilizar_os_servi_os_concorda_com_a_coleta_e_uso_conforme_estabelecido_na_pol_tica_de_privacidade_dessas_informa_es_incluindo_a_transfer_ncia_dessas_informa_es_para_fins_de_armazenamento_processamento_e_uso_pelo_hora_de_doar_e_suas_afiliadas_3_conte_do_nos_servi_os_voc_respons_vel_por_seu_uso_dos_servi_os_e_por_qualquer_conte_do_fornecido_incluindo_a_conformidade_com_leis_regras_e_regulamentos_aplic_veis_voc_s_deve_fornecer_conte_do_com_o_qual_esteja_confort_vel_em_compartilhar_com_outras_pessoas_qualquer_uso_ou_confian_a_em_qualquer_conte_do_ou_materiais_publicados_pelos_servi_os_ou_obtidos_por_voc_pelos_servi_os_de_sua_inteira_responsabilidade_n_o_aprovamos_apoiamos_declaramos_nem_garantimos_a_integridade_veracidade_exatid_o_ou_confiabilidade_de_qualquer_conte_do_ou_comunicado_publicado_pelos_servi_os_tampouco_endossamos_opini_es_expressas_por_eles_voc_compreende_que_ao_utilizar_os_servi_os_pode_estar_exposto_a_conte_do_ofensivo_prejudicial_impreciso_inadequado_ou_em_alguns_casos_as_publica_es_identificadas_de_modo_indevido_ou_fraudulentas_todo_o_conte_do_de_responsabilidade_exclusiva_da_pessoa_que_o_criar_n_o_podemos_monitorar_ou_controlar_o_conte_do_postado_atrav_s_dos_servi_os_e_n_o_podemos_nos_responsabilizar_por_tal_conte_do_reservamo_nos_o_direito_de_remover_o_conte_do_que_viole_o_acordo_do_usu_rio_incluindo_por_exemplo_apropria_o_ind_bita_de_propriedade_intelectual_falsa_identidade_conduta_ilegal_ou_ass_dio_4_utiliza_o_dos_servi_os_nossos_servi_os_evoluem_constantemente_sendo_assim_os_servi_os_podem_ser_alterados_de_tempos_em_tempos_a_nosso_exclusivo_crit_rio_podemos_interromper_permanente_ou_temporariamente_o_fornecimento_dos_servi_os_ou_quaisquer_recursos_nos_servi_os_para_voc_ou_usu_rios_em_geral_tamb_m_podemos_manter_o_direito_de_criar_limites_de_uso_e_armazenamento_a_nosso_exclusivo_crit_rio_e_a_qualquer_momento_n_s_tamb_m_podemos_remover_ou_recusar_a_distribui_o_de_qualquer_conte_do_nos_servi_os_limitar_a_distribui_o_ou_visibilidade_de_qualquer_conte_do_no_servi_o_suspender_ou_encerrar_contas_de_usu_rios_e_recuperar_nomes_de_usu_rios_sem_responsabilidade_perante_voc_o_hora_de_doar_pode_oferecer_determinados_servi_os_ou_recursos_para_os_quais_podem_ser_aplicados_termos_e_condi_es_adicionais_em_rela_o_ao_uso_desses_servi_os_ao_usar_qualquer_um_desses_servi_os_adicionais_voc_concorda_com_quaisquer_termos_adicionais_aplic_veis_a_esses_servi_os_e_esses_termos_adicionais_se_tornam_parte_de_nosso_contrato_com_voc_se_algum_dos_termos_adicionais_aplic_veis_entrar_em_conflito_com_estes_termos_os_termos_adicionais_prevalecer_o_enquanto_voc_estiver_usando_os_servi_os_aos_quais_eles_se_aplicam_sua_conta_voc_pode_precisar_criar_uma_conta_para_utilizar_alguns_de_nossos_servi_os_voc_respons_vel_por_proteger_sua_conta_portanto_use_uma_senha_forte_e_limite_seu_uso_para_esta_conta_n_s_n_o_podemos_ser_e_n_o_seremos_respons_veis_por_qualquer_perda_ou_dano_resultante_do_seu_n_o_cumprimento_com_o_descrito_acima_voc_pode_controlar_a_maioria_das_comunica_es_a_partir_dos_servi_os_talvez_o_hora_de_doar_precise_enviar_a_voc_certas_comunica_es_como_an_ncios_de_servi_os_e_mensagens_administrativas_essas_comunica_es_s_o_consideradas_parte_dos_servi_os_e_da_sua_conta_e_voc_n_o_conseguir_cancelar_o_recebimento_delas_se_voc_adicionou_seu_n_mero_de_telefone_em_sua_conta_e_posteriormente_mudar_ou_desativar_esse_n_mero_de_telefone_ser_necess_rio_atualizar_suas_informa_es_da_conta_para_ajudar_a_evitar_que_o_hora_de_doar_entre_em_contato_com_qualquer_pessoa_que_compre_seu_n_mero_antigo_sua_licen_a_para_utilizar_os_servi_os_o_hora_de_doar_oferece_a_voc_uma_licen_a_pessoal_mundial_gratuita_n_o_atribu_vel_e_n_o_exclusiva_para_utilizar_o_software_fornecido_a_voc_como_parte_dos_servi_os_essa_licen_a_possui_a_finalidade_exclusiva_de_permitir_que_voc_utilize_e_aproveite_o_benef_cio_dos_servi_os_conforme_descrito_pelo_hora_de_doar_na_maneira_permitida_por_estes_termos_nada_nos_termos_outorga_a_voc_o_direito_de_utilizar_o_nome_do_hora_de_doar_todos_os_direitos_t_tulos_e_interesses_sobre_e_relacionados_aos_servi_os_exceto_aqueles_relacionados_ao_conte_do_fornecido_pelos_usu_rios_s_o_e_continuar_o_sendo_propriedade_exclusiva_do_hora_de_doar_e_de_seus_licenciadores_quaisquer_feedback_coment_rios_ou_sugest_es_fornecidos_com_rela_o_ao_twitter_ou_os_servi_os_s_o_totalmente_volunt_rios_e_poder_o_ser_utilizados_como_feedback_coment_rios_ou_sugest_es_de_acordo_com_nossa_conveni_ncia_e_sem_que_haja_qualquer_obriga_o_perante_voc_em_vigor_desde_01_de_abril_de_2023"
+        android:textSize="8sp"
+        tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp,TextFields,VisualLintLongText,VisualLintTextFieldSize" />
+
+    <ImageView
+        android:layout_width="284dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:src="@drawable/icone"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <RadioButton
+        android:id="@+id/aceitatermo"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="@integer/material_motion_duration_short_1"
+        android:text="Aceito termo de uso " />
+
+    <Button
+        android:id="@+id/aceitacontinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#E3402A"
+        android:text="Aceitar e continuar"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+</LinearLayout>
+
+

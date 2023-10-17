@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4A8A8"
+    android:outlineAmbientShadowColor="#F4BCCF"
+    tools:context=".MainActivity"
+    tools:targetApi="p">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hora de Doar"
+        android:textColor="@color/white"
+        android:textSize="39dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage,TextContrastCheck" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/cooracao"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/icone"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/stroke"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textColorHint="#8D6E63"
+        android:textStyle="normal"
+        tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editsenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:textStyle="normal"
+        android:textColorHint="@color/black"
+        android:background="@drawable/stroke"
+        android:backgroundTint="@color/white"
+        android:maxLines="1"
+        android:inputType="numberPassword"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#E3402A"
+        android:gravity="center"
+        android:hint="Login"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textColorHint="@color/white"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btcadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#E3402A"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Cadastrar"
+        android:padding="15dp"
+        android:onClick= "cadas"
+        android:textColorHint="@color/white"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+</LinearLayout>

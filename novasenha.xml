@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4A8A8"
+    android:outlineAmbientShadowColor="#F4BCCF"
+    tools:context=".novasenha"
+    tools:ignore="UnusedAttribute">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hora de Doar"
+        android:textColor="@color/white"
+        android:textSize="39dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage,TextContrastCheck" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/cooracao"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/icone"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite a Nova senha"
+        android:layout_marginStart="100dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/stroke"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:hint="Nova Senha"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:textStyle="normal"
+        tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar Senha"
+        android:textStyle="normal"
+        android:textColorHint="@color/black"
+        android:background="@drawable/stroke"
+        android:backgroundTint="@color/white"
+        android:maxLines="1"
+        android:inputType="numberPassword"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#E3402A"
+        android:gravity="center"
+        android:text="Confirmar"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textColorHint="@color/white"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+
+</LinearLayout>
