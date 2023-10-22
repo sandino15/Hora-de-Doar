@@ -34,7 +34,8 @@
             android:layout_marginEnd="350dp"
             android:backgroundTint="@color/white"
             android:padding="10dp"
-
+            android:src="@drawable/setavoltar"
+            android:background="@drawable/stroke"
             tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </RelativeLayout>
@@ -46,14 +47,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="20dp"
-
+        android:src="@drawable/icone"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <RelativeLayout
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:layout_marginStart="5dp"
-
+        android:background="@drawable/stroke"
         android:backgroundTint="@color/white"
         tools:ignore="ExtraText">
         <TextView
@@ -74,7 +75,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="20dp"
-
+            android:background="@drawable/stroke"
             android:backgroundTint="#EFECEC"
             android:gravity="center"
             android:hint="  Nome"
@@ -89,7 +90,7 @@
             android:layout_marginTop="65dp"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="20dp"
-
+            android:background="@drawable/stroke"
             android:backgroundTint="#EFECEC"
             android:gravity="center"
             android:hint=" Hospital"
@@ -104,7 +105,7 @@
             android:layout_marginTop="110dp"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="20dp"
-
+            android:background="@drawable/stroke"
             android:backgroundTint="#EFECEC"
             android:gravity="center"
             android:hint=" Setor internação"
@@ -119,7 +120,7 @@
             android:layout_marginTop="155dp"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="20dp"
-
+            android:background="@drawable/stroke"
             android:backgroundTint="#EFECEC"
             android:gravity="center"
             android:hint="Idade"
@@ -134,7 +135,7 @@
             android:layout_marginTop="201dp"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="20dp"
-
+            android:background="@drawable/stroke"
             android:backgroundTint="#EFECEC"
             android:gravity="center"
             android:hint="Tipo Sanguineo"
@@ -147,7 +148,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="250dp"
             android:layout_marginEnd="5dp"
-
+            android:background="@drawable/stroke"
             android:backgroundTint="#EFECEC"
             android:gravity="center"
             android:hint="Pedir Doação!"

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@color/laranj"
     android:orientation="vertical"
     tools:context=".Menu">
 
@@ -16,7 +16,7 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="5dp"
-
+        android:background="@color/laranj"
         android:gravity="center"
         android:text="Hora de Doar"
         android:textColor="@color/white"
@@ -31,15 +31,15 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="370dp"
-
+        android:background="@drawable/stroke"
         android:backgroundTint="@color/white"
         android:backgroundTintMode="src_over"
-
+        app:srcCompat="@drawable/setavoltar"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-
+        android:src="@drawable/icone"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <EditText
@@ -49,7 +49,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="@color/white"
-
+        android:background="@drawable/stroke"
         android:padding="@dimen/cardview_default_radius"
         android:gravity="center"
         android:text="Quais são os requisitos para doa o de sangue ? podem doar sangue pessoas entre 16 e 69 anos e que estejam pesando mais de 50kg além disso é preciso apresentar documento oficial com foto e menores de 18 anos so podem doar com consentimento formal dos responsaveis"
@@ -83,7 +83,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Mensagens"
-            android:onClick="BotaoMensagens"
             android:paddingHorizontal="30dp"
             android:layout_marginStart="260dp"
             android:textColor="@color/black"
@@ -96,7 +95,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Pedir Doação"
-            android:onClick="BotaopedirDoacao"
             android:layout_marginStart="130dp"
             android:textColor="@color/black"
             android:backgroundTint="@color/white"
@@ -111,21 +109,21 @@
         android:layout_height="90dp"
         android:layout_gravity="center"
         android:contentDescription="Todo"
-
+        android:src="@drawable/icone"
         tools:ignore="ImageContrastCheck" />
 
-    <Button
+    <EditText
 
-        android:id="@+id/BotaoRedes1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="15dp"
-        android:backgroundTint="#E3402A"
-        android:onClick="botaoredes"
-        android:text="Local das redes credenciadas"
-        tools:ignore="LabelFor,TextFields,VisualLintTextFieldSize" />
+        android:background="@drawable/stroke"
+        android:backgroundTint="@color/white"
+        android:text="Pesquisar Locais Doação"
+        tools:ignore="LabelFor,TextFields,VisualLintTextFieldSize"
+        />
 
 
 </LinearLayout>

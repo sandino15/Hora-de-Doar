@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Gymfit2"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityLucas"
+            android:exported="false" />
+        <activity
             android:name=".NovoLucas.activityMenuu"
             android:exported="false" />
         <activity
@@ -36,8 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".Paginas.paginasMapas"
-            android:exported="false"
-             />
+            android:exported="false" />
         <activity
             android:name=".activity.Menu"
             android:exported="true">
