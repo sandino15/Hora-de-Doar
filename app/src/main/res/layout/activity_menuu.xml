@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/laranj"
+    android:background="@color/laranja"
     android:orientation="vertical"
     tools:context=".Menu">
 
@@ -16,7 +16,7 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="5dp"
-        android:background="@color/laranj"
+        android:background="@color/laranja"
         android:gravity="center"
         android:text="Hora de Doar"
         android:textColor="@color/white"
@@ -83,6 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Mensagens"
+            android:onClick="BotaoMensagens"
             android:paddingHorizontal="30dp"
             android:layout_marginStart="260dp"
             android:textColor="@color/black"
@@ -94,6 +95,7 @@
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:onClick="BotaopedirDoacao"
             android:text="Pedir Doação"
             android:layout_marginStart="130dp"
             android:textColor="@color/black"
@@ -111,19 +113,18 @@
         android:contentDescription="Todo"
         android:src="@drawable/icone"
         tools:ignore="ImageContrastCheck" />
+    <Button
 
-    <EditText
-
+        android:id="@+id/BotaoRedes1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="15dp"
-        android:background="@drawable/stroke"
-        android:backgroundTint="@color/white"
-        android:text="Pesquisar Locais Doação"
-        tools:ignore="LabelFor,TextFields,VisualLintTextFieldSize"
-        />
+        android:backgroundTint="#E3402A"
+        android:onClick="botaoredes"
+        android:text="Local das redes credenciadas"
+        tools:ignore="LabelFor,TextFields,VisualLintTextFieldSize" />
 
 
 </LinearLayout>
