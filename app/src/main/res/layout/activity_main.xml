@@ -5,7 +5,7 @@
     android:id="@+id/editBt"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_700"
+    android:background="#F4A8A8"
     android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
@@ -30,6 +30,6 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/_00_gym_wp" />
+        app:srcCompat="@drawable/cooracao" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
