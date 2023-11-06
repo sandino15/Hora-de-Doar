@@ -16,9 +16,14 @@ class Usuario (
 ) {
     constructor() : this("", "", "", "", "", "", "", "","")
     fun salvar(){
-        val firebaseRef: DatabaseReference = ConfiguracaoFirebase().getFirebase()
+        val firebaseRef: DatabaseReference = ConfiguracaoFirebase().getFirebaseDataBase()
         val usuariosRf : DatabaseReference = firebaseRef.child("usuarios")
+            .child(id)
         usuariosRf.setValue(this)
+    }
+
+    fun id(idUsuario: String) {
+
     }
 
 }

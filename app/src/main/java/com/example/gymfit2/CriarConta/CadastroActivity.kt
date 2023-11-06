@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gymfit2.R
 import com.example.gymfit2.activity.LoginActivity
+import com.example.gymfit2.helper.Base64Custom
 import com.example.gymfit2.helper.ConfiguracaoFirebase
 import com.example.gymfit2.model.Usuario
 import com.google.firebase.auth.FirebaseAuth
@@ -123,35 +124,30 @@ class CadastroActivity : AppCompatActivity() {
     }
 
     private fun cadastrar(usuario: Usuario) {
-        if (campoSenha == campoConfirmarSenha) {
+        val textoSenha = null
+        val textoConfirmarSenha = null
+        if (textoSenha == textoConfirmarSenha) {
             progressBar.visibility = View.VISIBLE
             autenticacao = ConfiguracaoFirebase().getFirebaseAutenticacao()
             autenticacao.createUserWithEmailAndPassword(usuario.email, usuario.senha)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
+                        val base64Custom = Base64Custom()
+                        val idUsuario = base64Custom.codificarBase64(usuario.email)
+                        usuario.id(idUsuario)
 
                         try {
 
-                            progressBar.visibility = View.GONE
-                            val idUsuario = task.result!!.user!!.uid
-                            val textoNome = ""
-                            val textoEmail = ""
-                            val textoSenha = ""
-                            val textoConfirmarSenha = ""
-                            val textoIdade = ""
-                            val textoSexo = ""
-                            val textoPeso = ""
-                            val textoAltura = ""
-                            val usuario = Usuario(
-                                idUsuario,
-                                textoNome,
-                                textoEmail,
-                                textoSenha,
-                                textoConfirmarSenha,
-                                textoIdade,
-                                textoSexo,
-                                textoPeso,
-                                textoAltura
+
+                            val dadosUsuario = mapOf(
+                                "nome" to usuario.nome,
+                                "nascimento" to usuario.nascimento,
+                                "fone" to usuario.fone,
+                                "sangue" to usuario.sangue,
+                                "email" to usuario.email,
+                                "endereco" to usuario.endereco,
+                                "senha" to usuario.senha,
+                                "confirmarSenha" to usuario.confirmarSenha
                             )
                             usuario.salvar()
 

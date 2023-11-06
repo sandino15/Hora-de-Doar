@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.gymfit2.CriarConta.CadastroActivity
+import com.example.gymfit2.NovoLucas.AlterarCadastro
 import com.example.gymfit2.R
 
 class Menu : AppCompatActivity() {
@@ -21,4 +22,5 @@ class Menu : AppCompatActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
+
 }

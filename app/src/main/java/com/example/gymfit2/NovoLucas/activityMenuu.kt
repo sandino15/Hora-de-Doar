@@ -26,4 +26,8 @@ class activityMenuu : AppCompatActivity() {
         val intent = Intent(this, RedesHospital::class.java)
         startActivity(intent)
     }
+    fun botaoAlterarCadastro(view: View) {
+        val intent = Intent(this, AlterarCadastro::class.java)
+        startActivity(intent)
+    }
 }

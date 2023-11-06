@@ -69,12 +69,11 @@
             android:id="@+id/Alteracadastro"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-
+            android:onClick="botaoAlterarCadastro"
             android:layout_marginTop="20dp"
-            android:text="Alterar Cadastro"
-            android:textColor="@color/black"
             android:backgroundTint="@color/white"
-            />
+            android:text="Alterar Cadastro"
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/pedirdoacao"

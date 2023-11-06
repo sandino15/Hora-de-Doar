@@ -61,7 +61,7 @@
         android:maxLines="1"
         android:minHeight="8dp"
         android:padding="5dp"
-        android:text="Nome Completo"
+        android:hint="Nome Completo"
         tools:ignore="HardcodedText,LabelFor,TextFields,VisualLintTextFieldSize" />
 
     <EditText
@@ -78,7 +78,7 @@
         android:minHeight="8dp"
         android:maxLines="1"
         android:padding="5dp"
-        android:text="Data Nascimneto"
+        android:hint="Data Nascimneto"
         tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
 
@@ -96,11 +96,40 @@
         android:maxLines="1"
         android:minHeight="8dp"
         android:padding="5dp"
-        android:text="Tipo Sanguineo"
+        android:hint="Tipo Sanguineo"
         tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,VisualLintTextFieldSize"
         />
 
-
+    <EditText
+        android:id="@+id/mudEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/stroke"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:maxLines="1"
+        android:minHeight="8dp"
+        android:padding="5dp"
+        android:hint="Endereço"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+    <EditText
+        android:id="@+id/meuFone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/stroke"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:maxLines="1"
+        android:minHeight="8dp"
+        android:padding="5dp"
+        android:hint="Fone"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/mudemail"
@@ -115,24 +144,8 @@
         android:maxLines="1"
         android:minHeight="8dp"
         android:padding="5dp"
-        android:text="Email"
+        android:hint="Email"
         tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
-
-    <EditText
-        android:id="@+id/mudconfemail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/stroke"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:maxLines="1"
-        android:minHeight="8dp"
-        android:padding="5dp"
-        android:text="Confirmar-Email"
-        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/mudprimesenha"
@@ -148,7 +161,7 @@
         android:minHeight="8dp"
         android:maxLines="1"
         android:padding="5dp"
-        android:text="Senha"
+        android:hint="Senha"
         tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
     <EditText
@@ -165,7 +178,7 @@
         android:inputType="number"
         android:maxLines="1"
         android:padding="5dp"
-        android:text="confirmar senha"
+        android:hint="confirmar senha"
         tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
     <ImageView
